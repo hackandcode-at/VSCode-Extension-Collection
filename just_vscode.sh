@@ -185,7 +185,7 @@ case ${answer:0:1} in
     ;;
 esac
 
-read -p "Do you need Maven? (y/n)? " answer
+read -p "Do you need Composer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension ikappas.composer
