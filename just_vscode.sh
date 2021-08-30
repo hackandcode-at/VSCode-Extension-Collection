@@ -66,6 +66,7 @@ case ${answer:0:1} in
         code --install-extension kj.sqltools-driver-redshift
         code --install-extension google-cloud-spanner-ecosystem.google-cloud-spanner-driver
         code --install-extension brunoventura.sqltools-athena-drivercode --install-extension atlassian.atlascode
+        code --install-extension dineug.vuerd-vscode
     ;;
 esac
 
@@ -118,10 +119,26 @@ case ${answer:0:1} in
     ;;
 esac
 
+read -p "Are you Data Scientist/AI-Developer? (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension ms-python.python
+        code --install-extension ms-toolsai.jupyter
+    ;;
+esac
+
 read -p "Are you API-Developer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension rohinivsenthil.postcode
+    ;;
+esac
+
+read -p "Are you an Hardware Developer? (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension ms-vscode.cpptools
+        code --install-extension platformio.platformio-ide
     ;;
 esac
 
@@ -136,14 +153,6 @@ read -p "Do you need an CI-Pipline Manager? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension jodyh.circleci-vscode
-    ;;
-esac
-
-read -p "Are you an Hardware Developer? (y/n)? " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension ms-vscode.cpptools
-        code --install-extension platformio.platformio-ide
     ;;
 esac
 
@@ -172,14 +181,6 @@ read -p "Do you need Kanban? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension mkloubert.vscode-kanban
-    ;;
-esac
-
-read -p "Are you Data Scientist/AI-Developer? (y/n)? " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension ms-python.python
-        code --install-extension ms-toolsai.jupyter
     ;;
 esac
 
