@@ -46,7 +46,7 @@ case ${answer:0:1} in
     ;;
 esac
 
-read -p "Do you use GitHub? (y/n)? " answer
+read -p "Do you use BitBucket/Jira? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension atlassian.atlascode
