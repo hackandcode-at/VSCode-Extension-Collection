@@ -11,6 +11,7 @@ code --install-extension 4tron.stack-overflow-view
 code --install-extension alefragnani.project-manager
 code --install-extension christian-kohler.path-intellisense
 code --install-extension usernamehw.errorlens
+code --install-extension jerrygoyal.shortcut-menu-bar
 
 read -p "Do you want the Vim Layout? (y/n)? " answer
 case ${answer:0:1} in
