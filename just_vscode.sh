@@ -195,7 +195,7 @@ esac
 read -p "Do you need Kanban? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension mkloubert.vscode-kanban
+        code --install-extension iulian-radu-at.sharable-kanban-boards
     ;;
 esac
 
