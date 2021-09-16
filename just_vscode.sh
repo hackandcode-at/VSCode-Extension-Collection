@@ -6,6 +6,7 @@ snap install code --classic
 # Some cool extensions for everyone
 code --install-extension formulahendry.code-runner
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension dotjoshjohnson.xml
 code --install-extension 2gua.rainbow-brackets
 code --install-extension 4tron.stack-overflow-view
 code --install-extension alefragnani.project-manager
