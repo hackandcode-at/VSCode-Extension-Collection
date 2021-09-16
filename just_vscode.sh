@@ -181,6 +181,7 @@ esac
 read -p "Do you need Maven? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
+        code --install-extension vscjava.vscode-spring-initializr
         code --install-extension vscjava.vscode-maven
     ;;
 esac
