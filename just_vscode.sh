@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # Snap install for VSCode
-snap install code --classic
+read -p "Do you want to install VSCode with Snap (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        snap install code --classic
+     ;;
+ esac
 
 # Some cool extensions for everyone
 code --install-extension formulahendry.code-runner
