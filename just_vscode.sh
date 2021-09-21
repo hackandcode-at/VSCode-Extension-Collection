@@ -20,6 +20,7 @@ code --install-extension usernamehw.errorlens
 code --install-extension jerrygoyal.shortcut-menu-bar
 code --install-extension jspolancor.presentationmode
 code --install-extension formulahendry.auto-close-tag
+code --install-extension wmaurer.change-case
 
 read -p "Do you want the Vim Layout? (y/n)? " answer
 case ${answer:0:1} in
