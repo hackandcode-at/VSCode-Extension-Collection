@@ -22,6 +22,7 @@ code --install-extension jspolancor.presentationmode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension wmaurer.change-case
 code --install-extension formulahendry.auto-rename-tag
+code --install-extension aaron-bond.better-comments
 
 read -p "Do you want the Vim Layout? (y/n)? " answer
 case ${answer:0:1} in
