@@ -38,6 +38,7 @@ case ${answer:0:1} in
         code --install-extension donjayamanne.githistory
         code --install-extension eamodio.gitlens
         code --install-extension codestream.codestreamcode --install-extension vscodevim.vim
+        code --install-extension mhutchie.git-graph
         read -p "Do you use GitLab? (y/n)? " answer
         case ${answer:0:1} in
             y|Y )
