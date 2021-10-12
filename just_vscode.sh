@@ -38,7 +38,7 @@ case ${answer:0:1} in
         code --install-extension donjayamanne.git-extension-pack
         code --install-extension donjayamanne.githistory
         code --install-extension eamodio.gitlens
-        code --install-extension codestream.codestreamcode --install-extension vscodevim.vim
+        code --install-extension codestream.codestreamcode
         code --install-extension mhutchie.git-graph
         read -p "Do you use GitLab? (y/n)? " answer
         case ${answer:0:1} in
@@ -78,7 +78,7 @@ case ${answer:0:1} in
         code --install-extension ultram4rine.sqltools-clickhouse-driver
         code --install-extension kj.sqltools-driver-redshift
         code --install-extension google-cloud-spanner-ecosystem.google-cloud-spanner-driver
-        code --install-extension brunoventura.sqltools-athena-drivercode --install-extension atlassian.atlascode
+        code --install-extension brunoventura.sqltools-athena-drivercode
         code --install-extension dineug.vuerd-vscode
     ;;
 esac
