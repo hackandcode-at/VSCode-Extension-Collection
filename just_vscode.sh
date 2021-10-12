@@ -118,7 +118,7 @@ esac
 read -p "Do you need Kubernetes? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
-        code --install.extension ms-kubernetes-tools.vscode-kubernetes-tools
+        code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
     ;;
 esac
 
