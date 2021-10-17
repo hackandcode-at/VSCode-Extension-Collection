@@ -241,5 +241,5 @@ case ${answer:0:1} in
     ;;
 esac
 
-
-
+cp settings.json  ~/.config/Code/User/settings.json
+cp keybindings.json ~/.config/Code/User/keybindings.json
