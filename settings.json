@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Darcula",
+    "workbench.colorTheme": "Material Theme",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -76,11 +76,6 @@
         "jupyter-notebook": "left"
     },
     "explorer.confirmDelete": false,
-    "vs-kubernetes": {
-        "vscode-kubernetes.helm-path.linux": "/home/m/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vscode-kubernetes.kubectl-path.linux": "/home/m/.vs-kubernetes/tools/kubectl/kubectl",
-        "vscode-kubernetes.minikube-path.linux": "/home/m/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    },
     "sqltools.useNodeRuntime": true,
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.findReplace": true,
