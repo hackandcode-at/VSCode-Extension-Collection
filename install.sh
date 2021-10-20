@@ -7,7 +7,7 @@ case ${answer:0:1} in
         snap install code --classic
      ;;
  esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 # Some cool extensions for everyone
 code --install-extension formulahendry.code-runner
 code --install-extension ms-vsliveshare.vsliveshare
@@ -25,14 +25,14 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension aaron-bond.better-comments
 code --install-extension njzy.stats-bar
 code --install-extension creinbacher.xpathtester
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you want the Vim Layout? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension vscodevim.vim
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you want Git? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -42,13 +42,14 @@ case ${answer:0:1} in
         code --install-extension eamodio.gitlens
         code --install-extension codestream.codestreamcode
         code --install-extension mhutchie.git-graph
+        echo "$(tput setaf 3)##################################################$(tput sgr 0)"
         read -p "Do you use GitLab? (y/n)? " answer
         case ${answer:0:1} in
             y|Y )
                 code --install-extension GitLab.gitlab-workflow
             ;;
         esac
-
+        echo "$(tput setaf 3)##################################################$(tput sgr 0)"
         read -p "Do you use GitHub? (y/n)? " answer
         case ${answer:0:1} in
             y|Y )
@@ -56,7 +57,7 @@ case ${answer:0:1} in
                 code --install-extension ziyasal.vscode-open-in-github
             ;;
         esac
-
+        echo "$(tput setaf 3)##################################################$(tput sgr 0)"
         read -p "Do you use BitBucket/Jira? (y/n)? " answer
         case ${answer:0:1} in
             y|Y )
@@ -66,7 +67,7 @@ case ${answer:0:1} in
     ;;
 esac
 
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need SQL? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -84,7 +85,7 @@ case ${answer:0:1} in
         code --install-extension dineug.vuerd-vscode
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Cassandra? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -92,21 +93,21 @@ case ${answer:0:1} in
         code --install-extension jordanhury.sqltools-cassandra
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need MongoDB? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension mongodb.mongodb-vscode
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Redis? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension dunn.redis
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Docker? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -116,14 +117,14 @@ case ${answer:0:1} in
         code --install-extension ms-vscode-remote.remote-ssh-edit
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Kubernetes? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Are you Web-Developer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -133,7 +134,7 @@ case ${answer:0:1} in
         code --install-extension tombonnike.vscode-status-bar-format-toggle
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Are you Data Scientist/AI-Developer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -141,14 +142,14 @@ case ${answer:0:1} in
         code --install-extension ms-toolsai.jupyter
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Are you API-Developer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension rohinivsenthil.postcode
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Are you an Hardware Developer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -156,42 +157,42 @@ case ${answer:0:1} in
         code --install-extension platformio.platformio-ide
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need an SSH-Manager? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension cweijan.vscode-ssh
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need an CI-Pipline Manager? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension jodyh.circleci-vscode
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Pip? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension slightc.pip-manager
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need npm? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension dennisvhest.npm-browser
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need NuGet? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension jmrog.vscode-nuget-package-manager
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Maven? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -199,28 +200,28 @@ case ${answer:0:1} in
         code --install-extension vscjava.vscode-maven
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Composer? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension ikappas.composer
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need Kanban? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension iulian-radu-at.sharable-kanban-boards
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need LateX? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension ajshort.latex-preview
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you want the Material Design? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
@@ -229,7 +230,7 @@ case ${answer:0:1} in
         code --install-extension zhuangtongfa.material-theme
     ;;
 esac
-
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you want some Fun-Extensions? (y/n)? " answer
 case ${answer:0:1} in
     y|Y )

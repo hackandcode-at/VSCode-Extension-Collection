@@ -15,12 +15,12 @@ code --install-extension aaron-bond.better-comments
 code --install-extension njzy.stats-bar
 code --install-extension creinbacher.xpathtester
 
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want the Vim Layout? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension vscodevim.vim
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want Git? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension codezombiech.gitignore
@@ -29,21 +29,24 @@ if ( $reply -match "[yY]" ) {
     code --install-extension eamodio.gitlens
     code --install-extension codestream.codestreamcode
     code --install-extension mhutchie.git-graph
+    Write-Host -ForegroundColor Yellow "##################################################"
     $reply = Read-Host -Prompt "Do you use GitLab? (y/n)? "
     if ( $reply -match "[yY]" ) { 
         code --install-extension GitLab.gitlab-workflow
     }
+    Write-Host -ForegroundColor Yellow "##################################################"
     $reply = Read-Host -Prompt "Do you use GitHub? (y/n)? "
     if ( $reply -match "[yY]" ) { 
         code --install-extension github.vscode-pull-request-github
         code --install-extension ziyasal.vscode-open-in-github
     }
+    Write-Host -ForegroundColor Yellow "##################################################"
     $reply = Read-Host -Prompt "Do you use BitBucket/Jira? (y/n)? "
     if ( $reply -match "[yY]" ) { 
         code --install-extension atlassian.atlascode
     }
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need SQL? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension mtxr.sqltools
@@ -59,23 +62,23 @@ if ( $reply -match "[yY]" ) {
     code --install-extension brunoventura.sqltools-athena-drivercode
     code --install-extension dineug.vuerd-vscode
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Cassandra? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension mtxr.sqltools
     code --install-extension jordanhury.sqltools-cassandra
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need MongoDB? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension mongodb.mongodb-vscode
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Redis? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension dunn.redis
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Docker? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ms-azuretools.vscode-docker
@@ -83,12 +86,12 @@ if ( $reply -match "[yY]" ) {
     code --install-extension ms-vscode-remote.remote-ssh
     code --install-extension ms-vscode-remote.remote-ssh-edit
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Kubernetes? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you Web-Developer? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension techer.open-in-browser
@@ -96,77 +99,77 @@ if ( $reply -match "[yY]" ) {
     code --install-extension Wscats.eno
     code --install-extension tombonnike.vscode-status-bar-format-toggle
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you Data Scientist/AI-Developer? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ms-python.python
     code --install-extension ms-toolsai.jupyter
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you API-Developer? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension rohinivsenthil.postcode
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you Hardware-Developer? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ms-vscode.cpptools
     code --install-extension platformio.platformio-ide
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need an SSH-Manager? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension cweijan.vscode-ssh
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need an CI-Pipline Manager? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension jodyh.circleci-vscode
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Pip? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension slightc.pip-manager
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need npm? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension dennisvhest.npm-browser
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need NuGet? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension jmrog.vscode-nuget-package-manager
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Maven? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension vscjava.vscode-spring-initializr
     code --install-extension vscjava.vscode-maven
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Maven? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ikappas.composer
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Kanban? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension iulian-radu-at.sharable-kanban-boards
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need LateX? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ajshort.latex-preview
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want the Material Design? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension Equinusocio.vsc-material-theme
     code --install-extension PKief.material-icon-theme
     code --install-extension zhuangtongfa.material-theme
 }
-
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want some Fun-Extensions? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension bar9.stories
