@@ -95,6 +95,8 @@
         ".vbs": "cscript //Nologo",
         ".scala": "scala",
         ".jl": "julia",
+        ".sh": "./$fileName",
+        ".ps1": "./$fileName",
         ".cr": "crystal",
         ".ml": "ocaml",
         ".exs": "elixir",
