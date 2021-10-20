@@ -148,7 +148,7 @@ if ( $reply -match "[yY]" ) {
     code --install-extension vscjava.vscode-maven
 }
 Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you need Maven? (y/n)? "
+$reply = Read-Host -Prompt "Do you need Composer? (y/n)? "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ikappas.composer
 }
