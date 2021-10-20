@@ -89,7 +89,7 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "window.zoomLevel": 0,
-    "window.title": "${activeFolderShort}/${activeEditorShort} VSCode SetUP by hackandcode",
+    "window.title": "${activeFolderShort}/${activeEditorShort} VSCode Setup by hackandcode",
     "code-runner.executorMapByFileExtension": {
         ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
         ".vbs": "cscript //Nologo",
