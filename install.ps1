@@ -85,6 +85,7 @@ if ( $reply -match "[yY]" ) {
     code --install-extension ms-vscode-remote.remote-containers
     code --install-extension ms-vscode-remote.remote-ssh
     code --install-extension ms-vscode-remote.remote-ssh-edit
+    code --install-extension ms-vscode-remote.remote-wsl
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need Kubernetes? (y/n)? "
