@@ -97,6 +97,8 @@
         ".jl": "julia",
         ".sh": "./$fileName",
         ".ps1": "./$fileName",
+        ".xsl": "xml tr $fileName",
+        ".xslt": "xml tr $fileName",
         ".cr": "crystal",
         ".ml": "ocaml",
         ".exs": "elixir",
