@@ -126,6 +126,9 @@ if ( $reply -match "[yY]" ) {
         code --install-extension peterhdd.dartgettersetter
         code --install-extension yongzhenlow.dart-built-value-snippets
         code --install-extension yashpaneliya.fast-dart
+        code --install-extension dart-code.flutter
+        code --install-extension alexisvt.flutter-snippets
+        code --install-extension gornivv.vscode-flutter-files
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need a SSH-Manager? (y/n) "
