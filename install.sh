@@ -6,7 +6,7 @@ case ${answer:0:1} in
     y|Y )
         snap install code --classic
      ;;
- esac
+esac
 echo "$(tput setaf 3)There are a few nice extensions who all need"
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 # Some cool extensions for everyone
