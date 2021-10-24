@@ -143,14 +143,14 @@ case ${answer:0:1} in
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Are you API-Developer? (y/n)? " answer
+read -p "Are you API-Developer? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension rohinivsenthil.postcode
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Are you an Hardware Developer? (y/n)? " answer
+read -p "Are you an Hardware Developer? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension ms-vscode.cpptools
@@ -158,10 +158,22 @@ case ${answer:0:1} in
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you need an SSH-Manager? (y/n)? " answer
+read -p "Are you a flutter App Developer? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension cweijan.vscode-ssh
+        code --install-extension bendixma.dart-data-class-generator
+        code --install-extension dart-code.dart-code
+        code --install-extension oscarcs.dart-syntax-highlighting-only
+        code --install-extension peterhdd.dartgettersetter
+        code --install-extension yongzhenlow.dart-built-value-snippets
+        code --install-extension yashpaneliya.fast-dart
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Do you want the Vim Layout? (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension vscodevim.vim
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
