@@ -118,19 +118,6 @@ if ( $reply -match "[yY]" ) {
     code --install-extension platformio.platformio-ide
 }
 Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Are you a flutter App Developer? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension bendixma.dart-data-class-generator
-        code --install-extension dart-code.dart-code
-        code --install-extension oscarcs.dart-syntax-highlighting-only
-        code --install-extension peterhdd.dartgettersetter
-        code --install-extension yongzhenlow.dart-built-value-snippets
-        code --install-extension yashpaneliya.fast-dart
-        code --install-extension dart-code.flutter
-        code --install-extension alexisvt.flutter-snippets
-        code --install-extension gornivv.vscode-flutter-files
-}
-Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you need a SSH-Manager? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension cweijan.vscode-ssh
