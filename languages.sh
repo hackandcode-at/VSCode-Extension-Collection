@@ -10,6 +10,7 @@ case ${answer:0:1} in
         code --install-extension slightc.pip-manager
         code --install-extension frhtylcn.pythonsnippets
         code --install-extension ms-toolsai.jupyter
+        echo "$(tput setaf 3)##################################################$(tput sgr 0)"
         read -p "Django (y/n)? " answer
         case ${answer:0:1} in
         y|Y )
@@ -19,6 +20,7 @@ case ${answer:0:1} in
             code --install-extension shamanu4.django-intellisense
         ;;
         esac
+        echo "$(tput setaf 3)##################################################$(tput sgr 0)"
         read -p "Flask (y/n)? " answer
         case ${answer:0:1} in
         y|Y )
@@ -94,7 +96,6 @@ case ${answer:0:1} in
         esac
      ;;
 esac
-
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "PHP (y/n)? " answer
 case ${answer:0:1} in
@@ -102,5 +103,14 @@ case ${answer:0:1} in
         code --install-extension felixfbecker.php-debug
         code --install-extension sophisticode.php-formatter
         code --install-extension ikappas.composer
+     ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Rust (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension rust-lang.rust
+        code --install-extension zakcodes.rust-snippets
+        code --install-extension bungcip.better-toml
      ;;
 esac
