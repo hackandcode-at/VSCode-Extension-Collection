@@ -77,5 +77,30 @@ case ${answer:0:1} in
     y|Y )
         code --install-extension xabikos.javascriptsnippets
         code --install-extension dennisvhest.npm-browser
+        echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+        read -p "React (y/n)? " answer
+        case ${answer:0:1} in
+            y|Y )
+                code --install-extension dsznajder.es7-react-js-snippets
+            ;;
+        esac
+        read -p "Vue (y/n)? " answer
+        case ${answer:0:1} in
+            y|Y )
+                code --install-extension jcbuisson.vue
+                code --install-extension hollowtree.vue-snippets
+                code --install-extension octref.vetur
+            ;;
+        esac
+     ;;
+esac
+
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "PHP (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension felixfbecker.php-debug
+        code --install-extension sophisticode.php-formatter
+        code --install-extension ikappas.composer
      ;;
 esac

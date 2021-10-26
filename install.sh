@@ -13,7 +13,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 code --install-extension formulahendry.code-runner
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension dotjoshjohnson.xml
-code --install-extension 2gua.rainbow-brackets
+code --install-extension coenraads.bracket-pair-colorizer
 code --install-extension 4tron.stack-overflow-view
 code --install-extension alefragnani.project-manager
 code --install-extension christian-kohler.path-intellisense
