@@ -124,14 +124,14 @@ case ${answer:0:1} in
         code --install-extension peterhdd.dartgettersetter
         code --install-extension yongzhenlow.dart-built-value-snippets
         code --install-extension yashpaneliya.fast-dart
-        code --install-extension dart-code.flutter
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "dart (y/n)? " answer
+read -p "flutter (y/n)? " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension alexisvt.flutter-snippets
         code --install-extension gornivv.vscode-flutter-files
+        code --install-extension dart-code.flutter
     ;;
 esac
