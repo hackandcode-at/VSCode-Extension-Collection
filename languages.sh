@@ -134,4 +134,5 @@ case ${answer:0:1} in
             code --install-extension dart-code.flutter
         ;;
     esac
+    ;;
 esac
