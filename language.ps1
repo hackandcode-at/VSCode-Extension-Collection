@@ -87,3 +87,21 @@ if ( $reply -match "[yY]" ) {
     code --install-extension zakcodes.rust-snippets
     code --install-extension bungcip.better-toml
 }
+Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Dart (y/n)?"
+if ( $reply -match "[yY]" ) { 
+            code --install-extension bendixma.dart-data-class-generator
+        code --install-extension dart-code.dart-code
+        code --install-extension oscarcs.dart-syntax-highlighting-only
+        code --install-extension peterhdd.dartgettersetter
+        code --install-extension yongzhenlow.dart-built-value-snippets
+        code --install-extension yashpaneliya.fast-dart
+        Write-Host -ForegroundColor Yellow "##################################################"
+        $reply = Read-Host -Prompt "Flutter (y/n)?"
+        if ( $reply -match "[yY]" ) { 
+            code --install-extension alexisvt.flutter-snippets
+            code --install-extension gornivv.vscode-flutter-files
+            code --install-extension dart-code.flutter
+    }
+}
+}
