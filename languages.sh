@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 echo "$(tput setaf 3)#       Install Language Support for VSCode      #$(tput sgr 0)"
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
@@ -113,4 +113,25 @@ case ${answer:0:1} in
         code --install-extension zakcodes.rust-snippets
         code --install-extension bungcip.better-toml
      ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "dart (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension bendixma.dart-data-class-generator
+        code --install-extension dart-code.dart-code
+        code --install-extension oscarcs.dart-syntax-highlighting-only
+        code --install-extension peterhdd.dartgettersetter
+        code --install-extension yongzhenlow.dart-built-value-snippets
+        code --install-extension yashpaneliya.fast-dart
+        code --install-extension dart-code.flutter
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "dart (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension alexisvt.flutter-snippets
+        code --install-extension gornivv.vscode-flutter-files
+    ;;
 esac
