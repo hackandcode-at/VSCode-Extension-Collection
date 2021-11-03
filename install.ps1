@@ -75,6 +75,7 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Neo4j? (y/n) "
 if ( $reply -match "[yY]" ) { 
+    code --install-extension jakeboone02.cypher-query-language
     code --install-extension dorongoldberg.neorunner
 }
 Write-Host -ForegroundColor Yellow "##################################################"
