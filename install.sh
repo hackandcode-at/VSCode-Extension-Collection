@@ -83,8 +83,6 @@ case ${answer:0:1} in
         code --install-extension saposs.sap-hana-driver-for-sqltools
         code --install-extension koszti.snowflake-driver-for-sqltools
         code --install-extension intersystems-community.sqltools-intersystems-driver
-        code --install-extension brunoventura.sqltools-athena-driver
-        code --install-extension scriptpup.sqltools-teradata-driver
         code --install-extension ultram4rine.sqltools-clickhouse-driver
         code --install-extension kj.sqltools-driver-redshift
         code --install-extension google-cloud-spanner-ecosystem.google-cloud-spanner-driver
