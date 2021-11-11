@@ -15,7 +15,7 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension aaron-bond.better-comments
 code --install-extension njzy.stats-bar
 code --install-extension creinbacher.xpathtester
-code --install-extension github.copilot
+code --install-extension kiteco.kite
 
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want the Vim Layout? (y/n) "
