@@ -170,13 +170,6 @@ case ${answer:0:1} in
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you want the Vim Layout? (y/n)? " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension vscodevim.vim
-    ;;
-esac
-echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you need a CI-Pipline Manager? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
