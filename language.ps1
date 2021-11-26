@@ -104,4 +104,3 @@ if ( $reply -match "[yY]" ) {
             code --install-extension dart-code.flutter
     }
 }
-}
