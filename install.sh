@@ -13,7 +13,6 @@ echo "$(tput setaf 3)##################################################$(tput sg
 code --install-extension formulahendry.code-runner
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension dotjoshjohnson.xml
-code --install-extension coenraads.bracket-pair-colorizer
 code --install-extension 2gua.rainbow-brackets
 code --install-extension 4tron.stack-overflow-view
 code --install-extension alefragnani.project-manager
@@ -180,7 +179,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Do you need a CI-Pipline Manager? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension jodyh.circleci-vscode
+        code --install-extension adityatoke21.git-branches-ci-cd
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
