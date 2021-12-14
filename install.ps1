@@ -134,7 +134,7 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use a CI-Pipline Manager? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension jodyh.circleci-vscode
+    code --install-extension adityatoke21.git-branches-ci-cd
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Pip? (y/n) "
