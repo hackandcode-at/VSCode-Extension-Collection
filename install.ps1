@@ -51,25 +51,8 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use SQL? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension mtxr.sqltools
-    code --install-extension mtxr.sqltools-driver-mssql
-    code --install-extension mtxr.sqltools-driver-mysql
-    code --install-extension mtxr.sqltools-driver-pg
-    code --install-extension mtxr.sqltools-driver-sqlite
-    code --install-extension saposs.sap-hana-driver-for-sqltools
-    code --install-extension koszti.snowflake-driver-for-sqltools
-    code --install-extension intersystems-community.sqltools-intersystems-driver
-    code --install-extension ultram4rine.sqltools-clickhouse-driver
-    code --install-extension kj.sqltools-driver-redshift
-    code --install-extension google-cloud-spanner-ecosystem.google-cloud-spanner-driver
-    code --install-extension brunoventura.sqltools-athena-drivercode
+    code --install-extension cweijan.vscode-database-client2
     code --install-extension dineug.vuerd-vscode
-}
-Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you use Cassandra? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension mtxr.sqltools
-    code --install-extension jordanhury.sqltools-cassandra
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Neo4j? (y/n) "
