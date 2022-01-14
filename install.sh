@@ -26,6 +26,8 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension aaron-bond.better-comments
 code --install-extension njzy.stats-bar
 code --install-extension creinbacher.xpathtester
+code --install-extension cweijan.vscode-database-client2
+code --install-extension dineug.vuerd-vscode
 code --install-extension github.copilot
 
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
@@ -67,36 +69,6 @@ case ${answer:0:1} in
                 code --install-extension atlassian.atlascode
             ;;
         esac
-    ;;
-esac
-
-echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you use SQL? (y/n) " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension cweijan.vscode-database-client2
-        code --install-extension dineug.vuerd-vscode
-    ;;
-esac
-echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you use Neo4j? (y/n) " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension dorongoldberg.neorunner
-    ;;
-esac
-echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you use MongoDB? (y/n) " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension mongodb.mongodb-vscode
-    ;;
-esac
-echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you use Redis? (y/n) " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension dunn.redis
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
