@@ -15,6 +15,8 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension aaron-bond.better-comments
 code --install-extension njzy.stats-bar
 code --install-extension creinbacher.xpathtester
+code --install-extension cweijan.vscode-database-client2
+code --install-extension dineug.vuerd-vscode
 code --install-extension github.copilot
 
 Write-Host -ForegroundColor Yellow "##################################################"
@@ -47,28 +49,6 @@ if ( $reply -match "[yY]" ) {
     if ( $reply -match "[yY]" ) { 
         code --install-extension atlassian.atlascode
     }
-}
-Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you use SQL? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension cweijan.vscode-database-client2
-    code --install-extension dineug.vuerd-vscode
-}
-Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you use Neo4j? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension jakeboone02.cypher-query-language
-    code --install-extension dorongoldberg.neorunner
-}
-Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you use MongoDB? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension mongodb.mongodb-vscode
-}
-Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you use Redis? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension dunn.redis
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Docker? (y/n) "
