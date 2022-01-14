@@ -74,7 +74,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Do you use SQL? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        cweijan.vscode-database-client2
+        code --install-extension cweijan.vscode-database-client2
         code --install-extension dineug.vuerd-vscode
     ;;
 esac
