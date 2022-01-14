@@ -74,27 +74,8 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Do you use SQL? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension mtxr.sqltools
-        code --install-extension mtxr.sqltools-driver-mssql
-        code --install-extension mtxr.sqltools-driver-mysql
-        code --install-extension mtxr.sqltools-driver-pg
-        code --install-extension mtxr.sqltools-driver-sqlite
-        code --install-extension saposs.sap-hana-driver-for-sqltools
-        code --install-extension koszti.snowflake-driver-for-sqltools
-        code --install-extension intersystems-community.sqltools-intersystems-driver
-        code --install-extension ultram4rine.sqltools-clickhouse-driver
-        code --install-extension kj.sqltools-driver-redshift
-        code --install-extension google-cloud-spanner-ecosystem.google-cloud-spanner-driver
-        code --install-extension brunoventura.sqltools-athena-drivercode
+        cweijan.vscode-database-client2
         code --install-extension dineug.vuerd-vscode
-    ;;
-esac
-echo "$(tput setaf 3)##################################################$(tput sgr 0)"
-read -p "Do you use Cassandra? (y/n) " answer
-case ${answer:0:1} in
-    y|Y )
-        code --install-extension mtxr.sqltools
-        code --install-extension jordanhury.sqltools-cassandra
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
