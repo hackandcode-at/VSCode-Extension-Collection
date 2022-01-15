@@ -49,6 +49,18 @@ case ${answer:0:1} in
     y|Y )
         code --install-extension ms-dotnettools.csharp
         code --install-extension lucasazzola.vscode-csproj
+        code --install-extension adrianwilczynski.asp-net-core-snippet-pack
+        code --install-extension ms-dotnettools.vscode-dotnet-runtime
+        code --install-extension adrianwilczynski.asp-net-core-switcher
+        code --install-extension fudge.auto-using
+        code --install-extension adrianwilczynski.blazor-snippet-pack
+        code --install-extension ironcutter24.cscurlyformatter
+        code --install-extension kreativ-software.csharpextensions
+        code --install-extension vain0x.csharp-gen-ctor
+        code --install-extension adrianwilczynski.namespace
+        code --install-extension k--kato.docomment 
+        code --install-extension kishoreithadi.dotnet-core-essentials
+        code --install-extension ms-dotnettools.blazorwasm-companion
         code --install-extension jmrog.vscode-nuget-package-manager
         code --install-extension jorgeserrano.vscode-csharp-snippets
      ;;
