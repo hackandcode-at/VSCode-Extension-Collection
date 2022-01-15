@@ -198,8 +198,6 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Do you want some Fun-Extensions? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension bar9.stories
-        code --install-extension benawad.vsinder
         code --install-extension mkloubert.vs-media-player
         code --install-extension shyykoserhiy.vscode-spotify
         code --install-extension tyriar.luna-paint
