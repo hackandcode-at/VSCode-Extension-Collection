@@ -145,8 +145,6 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want some Fun-Extensions? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension bar9.stories
-    code --install-extension benawad.vsinder
     code --install-extension mkloubert.vs-media-player
     code --install-extension shyykoserhiy.vscode-spotify
     code --install-extension tyriar.luna-paint
