@@ -81,7 +81,7 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you an API-Developer? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension rohinivsenthil.postcode
+    code --install-extension rangav.vscode-thunder-client
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you a Hardware-Developer? (y/n) "
