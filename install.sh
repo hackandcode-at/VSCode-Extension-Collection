@@ -110,7 +110,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Are you an API-Developer? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension rohinivsenthil.postcode
+        code --install-extension rangav.vscode-thunder-client
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
