@@ -63,6 +63,7 @@ Write-Host -ForegroundColor Yellow "############################################
 $reply = Read-Host -Prompt "Do you use Kubernetes? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+    code --install-extension mindaro.mindaro
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you a Web-Developer? (y/n) "
