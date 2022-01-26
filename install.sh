@@ -86,6 +86,7 @@ read -p "Do you use Kubernetes? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+        code --install-extension mindaro.mindaro
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
