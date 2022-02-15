@@ -17,6 +17,7 @@ code --install-extension njzy.stats-bar
 code --install-extension creinbacher.xpathtester
 code --install-extension cweijan.vscode-database-client2
 code --install-extension dineug.vuerd-vscode
+code --install-extension mongodb.mongodb-vscode
 code --install-extension github.copilot
 
 Write-Host -ForegroundColor Yellow "##################################################"
