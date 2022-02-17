@@ -131,7 +131,7 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Kanban? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension iulian-radu-at.sharable-kanban-boards
+    code --install-extension gordonlarrigan.vscode-kanbn
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use LateX? (y/n) "
