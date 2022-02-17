@@ -178,7 +178,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Do you use Kanban? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension iulian-radu-at.sharable-kanban-boards
+        code --install-extension gordonlarrigan.vscode-kanbn
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
