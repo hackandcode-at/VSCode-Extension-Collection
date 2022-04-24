@@ -32,7 +32,6 @@ code --install-extension hediet.vscode-drawio
 code --install-extension mongodb.mongodb-vscode
 code --install-extension github.copilot
 code --install-extension GrapeCity.gc-excelviewer
-code --install-extension Arjun.swagger-viewer
 code --install-extension ms-vsliveshare.vsliveshare-audio
 
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
