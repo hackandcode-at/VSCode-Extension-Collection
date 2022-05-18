@@ -137,6 +137,11 @@ if ( $reply -match "[yY]" ) {
     code --install-extension gordonlarrigan.vscode-kanbn
 }
 Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you want to manage VirtualBox VMs? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension acherkashin.virtualbox-extension
+}
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use LateX? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ajshort.latex-preview
