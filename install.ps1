@@ -96,11 +96,6 @@ if ( $reply -match "[yY]" ) {
     code --install-extension platformio.platformio-ide
 }
 Write-Host -ForegroundColor Yellow "##################################################"
-$reply = Read-Host -Prompt "Do you need a SSH-Manager? (y/n) "
-if ( $reply -match "[yY]" ) { 
-    code --install-extension cweijan.vscode-ssh
-}
-Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use a CI-Pipline Manager? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension adityatoke21.git-branches-ci-cd
