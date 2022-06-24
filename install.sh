@@ -117,6 +117,7 @@ case ${answer:0:1} in
     y|Y )
         code --install-extension rangav.vscode-thunder-client
         code --install-extension tanhakabir.rest-book
+        code --install-extension pashkatrick.grpc-client
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
