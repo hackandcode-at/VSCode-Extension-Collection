@@ -116,7 +116,7 @@ read -p "Are you an API-Developer? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
         code --install-extension rangav.vscode-thunder-client
-        code --install-extension tanhakabir.rest-book
+        code --install-extension anweber.httpbook
         code --install-extension pashkatrick.grpc-client
     ;;
 esac
