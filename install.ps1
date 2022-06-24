@@ -88,6 +88,7 @@ $reply = Read-Host -Prompt "Are you an API-Developer? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension rangav.vscode-thunder-client
     code --install-extension tanhakabir.rest-book
+    code --install-extension pashkatrick.grpc-client
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you a Hardware-Developer? (y/n) "
