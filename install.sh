@@ -154,7 +154,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Do you use NuGet? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension jmrog.vscode-nuget-package-manager
+        code --install-extension BogdanTasciuc.nuget-gallery-mgr
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
