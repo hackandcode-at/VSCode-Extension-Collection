@@ -115,7 +115,7 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use NuGet? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension jmrog.vscode-nuget-package-manager
+    code --install-extension BogdanTasciuc.nuget-gallery-mgr
 }
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Maven? (y/n) "
