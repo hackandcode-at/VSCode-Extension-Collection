@@ -35,6 +35,7 @@ code --install-extension GrapeCity.gc-excelviewer
 code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension MatiasG.import-doc-link
 code --install-extension spmeesseman.vscode-taskexplorer
+code --install-extension axetroy.vscode-package-manager
 
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you want the Vim Layout? (y/n) " answer
