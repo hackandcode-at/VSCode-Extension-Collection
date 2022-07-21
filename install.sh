@@ -139,6 +139,41 @@ case ${answer:0:1} in
     ;;
 esac
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Do you use RabbitMQ? (y/n) " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension rohinivsenthil.rabbitrace
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Do you use Kafka? (y/n) " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension jeppeandersen.vscode-kafka
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Do you use Azure? (y/n) " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension ms-vscode.vscode-node-azure-pack
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Do you use Google Cloud? (y/n) " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension GoogleCloudTools.cloudcode
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
+read -p "Do you use AWS? (y/n) " answer
+case ${answer:0:1} in
+    y|Y )
+        code --install-extension AmazonWebServices.aws-toolkit-vscode
+    ;;
+esac
+echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you use Pip? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
