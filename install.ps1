@@ -105,6 +105,31 @@ if ( $reply -match "[yY]" ) {
     code --install-extension adityatoke21.git-branches-ci-cd
 }
 Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you use RabbitMQ? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension rohinivsenthil.rabbitrace
+}
+Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you use Kafka? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension jeppeandersen.vscode-kafka
+}
+Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you use Azure? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension ms-vscode.vscode-node-azure-pack
+}
+Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you use Google Cloud? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension GoogleCloudTools.cloudcode
+}
+Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you use AWS? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension AmazonWebServices.aws-toolkit-vscode
+}
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Pip? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension slightc.pip-manager
