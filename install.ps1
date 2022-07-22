@@ -115,6 +115,11 @@ if ( $reply -match "[yY]" ) {
     code --install-extension jeppeandersen.vscode-kafka
 }
 Write-Host -ForegroundColor Yellow "##################################################"
+$reply = Read-Host -Prompt "Do you use Jenkins? (y/n) "
+if ( $reply -match "[yY]" ) { 
+    code --install-extension tabeyti.jenkins-jack
+}
+Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you use Azure? (y/n) "
 if ( $reply -match "[yY]" ) { 
     code --install-extension ms-vscode.vscode-node-azure-pack
