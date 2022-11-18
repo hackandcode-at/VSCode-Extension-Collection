@@ -25,6 +25,7 @@ code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension MatiasG.import-doc-link
 code --install-extension spmeesseman.vscode-taskexplorer
 code --install-extension axetroy.vscode-package-manager
+code --install-extension Thinker.create-app
 
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Do you want the Vim Layout? (y/n) "
@@ -89,7 +90,7 @@ if ( $reply -match "[yY]" ) {
 Write-Host -ForegroundColor Yellow "##################################################"
 $reply = Read-Host -Prompt "Are you an API-Developer? (y/n) "
 if ( $reply -match "[yY]" ) { 
-    code --install-extension rangav.vscode-thunder-client
+    code --install-extension RapidAPI.vscode-rapidapi-client
     code --install-extension anweber.httpbook
     code --install-extension pashkatrick.grpc-client
 }
