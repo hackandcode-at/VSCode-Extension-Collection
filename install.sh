@@ -36,6 +36,7 @@ code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension MatiasG.import-doc-link
 code --install-extension spmeesseman.vscode-taskexplorer
 code --install-extension axetroy.vscode-package-manager
+code --install-extension Thinker.create-app
 
 echo "$(tput setaf 3)##################################################$(tput sgr 0)"
 read -p "Do you want the Vim Layout? (y/n) " answer
@@ -118,7 +119,7 @@ echo "$(tput setaf 3)##################################################$(tput sg
 read -p "Are you an API-Developer? (y/n) " answer
 case ${answer:0:1} in
     y|Y )
-        code --install-extension rangav.vscode-thunder-client
+        code --install-extension RapidAPI.vscode-rapidapi-client
         code --install-extension anweber.httpbook
         code --install-extension pashkatrick.grpc-client
     ;;
